@@ -1,0 +1,112 @@
+/* Color Theme
+#61892F Olive Green
+#86C232 Dark lime green
+#222629 Space Black/Grayish
+#474B4F Medium gray
+#6B6E70 lighter gray
+*/
+
+html{
+    margin: 0px;
+    padding: 0px; 
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.container-fluid{
+    background-color: #fff;
+    height: 100vh;
+    padding: 50px;
+}
+
+.nav-bar{
+    background-color: #222629;
+    height: 50px;
+}
+
+.content{
+    background-color: red;
+    height: 300px;
+}
+
+.aside{
+    background-color: aqua;
+    height: 300px;
+}
+
+.promo-1, .promo-2, .promo-3, .promo-4{
+    background-color: brown;
+    height: 100px;
+}
+
+.footer{
+    background-color: black;
+    height: 50px;
+}
+
+.footer h5{
+    color: #fff;
+}
+
+/* @media only screen and (min-width: 768px){
+    .container-fluid{
+        background-color: red;
+    }
+    
+    .header{
+        background-color: green;
+    }
+    
+    .navbar{
+        background-color: yellow;
+    }
+    
+    .content{
+        background-color: blue;
+    }
+    
+    .aside{
+        background-color: brown;
+    }
+    
+    .promo-1, .promo-2, .promo-3, .promo-4{
+        background-color: blueviolet;
+    }
+    
+    .footer{
+        background-color: yellowgreen;
+    }
+}
+
+@media only screen and (min-width: 875px){
+    .container-fluid{
+        background-color: black;
+    }
+    
+    .header{
+        background-color: red;
+    }
+    
+    .navbar{
+        background-color: green;
+    }
+    
+    .content{
+        background-color: grey;
+    }
+    
+    .aside{
+        background-color: blue;
+    }
+    
+    .promo-1, .promo-2, .promo-3, .promo-4{
+        background-color: goldenrod;
+    }
+    
+    .footer{
+        background-color: aqua;
+    }
+} */
