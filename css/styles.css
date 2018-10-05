@@ -6,10 +6,6 @@
 #6B6E70 lighter gray
 */
 
-html{
-    margin: 0px;
-    padding: 0px; 
-}
 
 body{
     font-family: 'Ubuntu', sans-serif;
@@ -19,7 +15,7 @@ body{
 .container-fluid{
     background-color: #fff;
     height: 100vh;
-    padding: 50px;
+    padding: 1em;
 }
 
 .nav-bar{
@@ -27,14 +23,8 @@ body{
     height: 50px;
 }
 
-.content{
-    background-color: red;
-    height: 300px;
-}
-
-.aside{
-    background-color: aqua;
-    height: 300px;
+.secret{
+    vertical-align: bottom;
 }
 
 .promo{
