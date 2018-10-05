@@ -37,20 +37,11 @@ body{
     height: 300px;
 }
 
-.promo-1, .promo-2, .promo-3, .promo-4{
-    background-color: brown;
-    height: 100px;
-}
-
-.footer{
+.promo{
     background-color: black;
-    height: 50px;
+    height: 100px;
+    margin: 1em;
 }
-
-.footer h5{
-    color: #fff;
-}
-
 /* @media only screen and (min-width: 768px){
     .container-fluid{
         background-color: red;
