@@ -11,6 +11,7 @@
 font-family: 'Source Code Pro', monospace;
 font-family: 'Ubuntu', sans-serif; 
 */
+/* #e9ecef */
 body{
     font-family: 'Ubuntu', sans-serif;
 }
@@ -23,9 +24,18 @@ body{
     font-family: 'Source Code Pro', monospace;
 }
 
+.margin-bot{
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
 .header-spacing{
     margin-top: .5em;
     margin-bottom: .5em;
+}
+
+li{
+    list-style: none;
 }
 
 .navbar{
@@ -35,18 +45,18 @@ body{
 }
 
 .jumbotron{
+    background-image: linear-gradient(rgba(233, 236, 239, .6),rgba(233, 236, 239, .6)), url(../images/hero.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
     height: 95vh;
     margin-bottom: .5em;
 }
 
 /* DOWNLOADING GIT */
 .download-git{
-
+    background-color: #fff;
 }
 
 .downloads a{
@@ -66,17 +76,21 @@ body{
     
 }
 
-/* MAKING DIRECTORIES AND FILES */
-
-.git-dir-files{
+/* DIFFERENT WAYS TO GIT INIT */
+.git-init{
     background-color: #e9ecef;
 }
 
-/* DIFFERENT WAYS TO GIT INIT */
-
-.git-init{
-    /* background-color: #e9ecef; */
+/* MAKING DIRECTORIES AND FILES */
+.git-dir-files{
+    background-color: #fff;
 }
+
+.git-cd-ls{
+    background-color: #e9ecef;
+}
+
+
 
 
 
