@@ -1,0 +1,159 @@
+/* Color Theme
+#61892F Olive Green
+#86C232 Dark lime green
+#222629 Space Black/Grayish
+#474B4F Medium gray
+#6B6E70 lighter gray
+*/
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Ubuntu');
+
+/* 
+font-family: 'Source Code Pro', monospace;
+font-family: 'Ubuntu', sans-serif; 
+*/
+/* #e9ecef */
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    margin-bottom: 2em;
+}
+
+.cmd-font{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.margin-bot{
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.header-spacing{
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+li{
+    list-style: none;
+}
+
+.navbar{
+    background-color: #222629;
+    height: 50px;
+    /* margin-bottom: 10px; */
+}
+
+.jumbotron{
+    background-image: linear-gradient(rgba(233, 236, 239, .6),rgba(233, 236, 239, .6)), url(../images/hero.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;
+    margin-bottom: .5em;
+}
+
+/* DOWNLOADING GIT */
+.download-git{
+    background-color: #fff;
+}
+
+.downloads a{
+    text-decoration: none;
+    color: black;
+}
+
+.downloads a:hover{
+    text-decoration: none;
+}
+
+
+.git-downloads{
+    background-color: #e9ecef;
+    padding: 1em;
+    margin-bottom: 1em;
+    
+}
+
+/* DIFFERENT WAYS TO GIT INIT */
+.git-init{
+    background-color: #e9ecef;
+}
+
+/* MAKING DIRECTORIES AND FILES */
+.git-dir-files{
+    background-color: #fff;
+}
+
+.git-cd-ls{
+    background-color: #e9ecef;
+}
+
+
+
+
+
+
+
+
+
+/* @media only screen and (min-width: 768px){
+    .container-fluid{
+        background-color: red;
+    }
+    
+    .header{
+        background-color: green;
+    }
+    
+    .navbar{
+        background-color: yellow;
+    }
+    
+    .content{
+        background-color: blue;
+    }
+    
+    .aside{
+        background-color: brown;
+    }
+    
+    .promo-1, .promo-2, .promo-3, .promo-4{
+        background-color: blueviolet;
+    }
+    
+    .footer{
+        background-color: yellowgreen;
+    }
+}
+
+@media only screen and (min-width: 875px){
+    .container-fluid{
+        background-color: black;
+    }
+    
+    .header{
+        background-color: red;
+    }
+    
+    .navbar{
+        background-color: green;
+    }
+    
+    .content{
+        background-color: grey;
+    }
+    
+    .aside{
+        background-color: blue;
+    }
+    
+    .promo-1, .promo-2, .promo-3, .promo-4{
+        background-color: goldenrod;
+    }
+    
+    .footer{
+        background-color: aqua;
+    }
+} */
