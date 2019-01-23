@@ -25,13 +25,17 @@ body{
 }
 
 .margin-bot{
-    display: inline-block;
+    display: block;
     margin-bottom: 1rem;
 }
 
 .header-spacing{
     margin-top: .5em;
     margin-bottom: .5em;
+}
+
+.git-example{
+    font-weight: bold;
 }
 
 li{
@@ -86,11 +90,15 @@ li{
     background-color: #fff;
 }
 
+/* LISTING DIRECTORIES AND FILES */
 .git-cd-ls{
     background-color: #e9ecef;
 }
 
-
+/* PUSHING TO GITHUB */
+.git-add{
+    background-color: #fff;
+}
 
 
 
