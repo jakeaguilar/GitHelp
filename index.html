@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css">
     <title>GitHelp</title>
 </head>
+
 <body>
     <nav class="col sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
         <a href="#" class="navbar-brand">GitHelp</a>
@@ -18,16 +21,16 @@
                 <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Git Downloads</a></li>
             </ul>
-        </div>  
+        </div>
     </nav>
-    <div class="jumbotron jumbotron-fluid"> 
-        <div class="container text-center"> 
-            <h1 class="display-3">GitHelp...</h1> 
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-3">GitHelp...</h1>
             <p class="lead">For those who are seeking help with Git & Github</p>
             <p>(Still a work in progress...)</p>
             <!-- <i class="fas fa-user-secret fa-2x secret"></i> -->
             <button type="button" class="btn btn-dark">Git Started</button>
-        </div> 
+        </div>
     </div>
     <!-- DOWNLOADING GIT -->
     <div class="container text-center download-git">
@@ -35,19 +38,63 @@
         <div class="row d-flex flex-column">
             <h3 class="header-spacing">Downloading Git</h3>
             <div class="col-12 d-flex flex-column downloads">
-                <a href="https://git-scm.com/download/win" target ="_blank" class="git-downloads">Download Git for Windows</a>
-                <a href="https://git-scm.com/download/mac" target ="_blank" class="git-downloads">Download Git for Mac</a>
-                <a href="https://git-scm.com/download/linux" target ="_blank" class="git-downloads">Download Git for Linux/Unix</a>
+                <a href="https://git-scm.com/download/win" target="_blank" class="git-downloads">Download Git for
+                    Windows</a>
+                <a href="https://git-scm.com/download/mac" target="_blank" class="git-downloads">Download Git for Mac</a>
+                <a href="https://git-scm.com/download/linux" target="_blank" class="git-downloads">Download Git for
+                    Linux/Unix</a>
             </div>
         </div>
     </div>
-    <!--DIFFERNET WAYS TO GIT INIT -->
+    <!-- WHAT IS GIT? -->
+    <div class="container-fluid text-center what-is-git">
+        <h1 class="header-spacing">What even is Git?</h1>
+        <div class="row d-flex flex-column align-items-center">
+            <div class="col-8">
+                <p>Git is a Version Control System (VCS) that keeps track of older versions of files,
+                    and gives us the ability to roll back and maintain different versions of the same files at the same
+                    time.
+                </p>
+                <p>Git is vital for developers today, because of one simple word, collaboration! Git allows many developers to clone a 
+                    repository or "repo" (collection of files) from a main codebase down to their machines, work separately on portions of code, 
+                    and then commit their changes back to the main codebase where everybody can update the new changes.  
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- WHAT IS GITHUB? -->
+    <div class="container-fluid text-center">
+        <h1 class="header-spacing">Then What is Github?</h1>
+        <div class="row d-flex flex-column align-items-center">
+            <div class="col-8">
+                <p>Github is a platform/cloud-based service that allows developers to store and manage their project's code, in addition to keeping track to changes
+                    in the codebase, merging together different versions/branches of code and much more!
+                </p>
+                <p>Also worth noting that are other service out there like Github, such as BitBucket or GitLab, but they essentially work like Github</p>
+            </div>
+        </div>
+    </div>
+    <!-- GIT WORKFLOW -->
+    <div class="container-fluid text-center git-workflow">
+        <h1 class="header-spacing">Git Workflow</h1>
+        <div class="row d-flex flex-column align-items-center">
+            <div class="col-8">
+                <p>Essentially there are three "trees" maintained by git. The first tree is called the <span class="cmd-font">"Working
+                    Directory"</span>. This tree contains the acutal files. Next, is the <span class="cmd-font">"Index"</span>
+                    tree, which acts as a staging area before pushing files up. The last tree is the <span class="cmd-font">"HEAD"</span>
+                    which simply a reference to the most recent commit made in your current branch, most of the time...
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--DIFFERENTT WAYS TO GIT INIT -->
     <div class="container-fluid text-center git-init">
         <h1 class="header-spacing">Different Ways of Intializing a Git Repo</h1>
         <div class="row d-flex flex-column align-items-center">
             <div class="col-8">
                 <h3 class="header-spacing">Command Line/Terminal</h3>
-                <p>Once you create a repo on GitHub, you can run the following commands but you need insert your own repo name</p>
+                <p>Once you create a repo on GitHub, you can run the following commands but you need insert your own
+                    repo name</p>
                 <p class="cmd-font margin-bot">
                     git init<br>
                     git add .<br>
@@ -64,9 +111,11 @@
                 <img src="images/githubrepoinit.png" alt="githubrepoinit" class="img-fluid margin-bot">
                 <p>After, clicking "Create repository", it will bring you to this page down below: </p>
                 <img src="images/gitclonerepo.png" alt="gitclonerepo" class="img-fluid margin-bot">
-                <p>From here, click on the green button saying, "Clone or download"</p> 
-                <p>A dropdown will appear, saying Clone with SSH/or HTTPS, then click on the clipboard to the right of the link</p>
-                <p>After copying the link, open your terminal/git bash and change directories into whereever you keep your projects, for me it's my projects folder</p>
+                <p>From here, click on the green button saying, "Clone or download"</p>
+                <p>A dropdown will appear, saying Clone with SSH/or HTTPS, then click on the clipboard to the right of
+                    the link</p>
+                <p>After copying the link, open your terminal/git bash and change directories into whereever you keep
+                    your projects, for me it's my projects folder</p>
                 <p>then the git command you will use to clone your Github repo down to your machine is: </p>
                 <span class="cmd-font margin-bot">git clone git@github.com:jakeaguilar/git-example.git</span>
                 <img src="images/gitclonebash.png" alt="gitbashclone" class="img-fluid margin-bot">
@@ -76,7 +125,8 @@
     <!-- MAKING DIRECTORIES AND FILES -->
     <div class="container-fluid text-center git-dir-files">
         <h1 class="header-spacing">Making Directories and Files</h1>
-        <h4 class="header-spacing">Now that we have our repos on our machine, we can begin creating our folder structure and files.</h4>
+        <h4 class="header-spacing">Now that we have our repos on our machine, we can begin creating our folder
+            structure and files.</h4>
         <div class="row d-flex flex-row">
             <div class="col-6">
                 <h3 class="header-spacing">Directories</h3>
@@ -95,14 +145,16 @@
                 <span class="cmd-font margin-bot">touch "file name"</span>
                 <p>You can also create multiple files at once by: </p>
                 <span class="cmd-font margin-bot"> touch index.html css/styles.css js/scripts.js</span>
-                <p>One thing to keep in mind when creating files is to make sure you are in the right directory before creating it.</p>
+                <p>One thing to keep in mind when creating files is to make sure you are in the right directory before
+                    creating it.</p>
             </div>
         </div>
     </div>
     <!-- CHANGING DIRECTORIES AND LISTING -->
     <div class="container-fluid text-center git-cd-ls">
         <h1 class="header-spacing">Changing Directories</h1>
-        <h4 class="header-spacing">We've learned how to make our folder structure but how do we change between directories?</h4>
+        <h4 class="header-spacing">We've learned how to make our folder structure but how do we change between
+            directories?</h4>
         <div class="row d-flex flex-row">
             <div class="col-6">
                 <h3 class="header-spacing"> Changing Directories</h3>
@@ -113,10 +165,11 @@
             </div>
             <div class="col-6">
                 <h3 class="header-spacing">Listing</h3>
-                <p>Sometimes when in a directory, you may want to see what files live within that directory. The command we use is:</p>
+                <p>Sometimes when in a directory, you may want to see what files live within that directory. The
+                    command we use is:</p>
                 <span class="cmd-font margin-bot">ls</span>
                 <p>In turn this will put out a response similar to this: </p>
-                <span class="cmd-font margin-bot">css  images  index.html  js</span>
+                <span class="cmd-font margin-bot">css images index.html js</span>
             </div>
         </div>
     </div>
@@ -147,7 +200,8 @@
                 <span class="cmd-font margin-bot">touch "file name"</span>
                 <p>You can also create multiple files at once by: </p>
                 <span class="cmd-font margin-bot"> touch index.html css/styles.css js/scripts.js</span>
-                <p>One thing to keep in mind when creating files is to make sure you are in the right directory before creating it.</p>
+                <p>One thing to keep in mind when creating files is to make sure you are in the right directory before
+                    creating it.</p>
             </div>
         </div>
     </div>
@@ -156,4 +210,5 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
