@@ -214,12 +214,10 @@
                         <p class="cmd-text"> > Agent pid 12345</p>
                         <p> 6.) Add your SSH private key to the ssh-agent, by copying the command below:</p>
                         <p class="cmd-text">ssh-add ~/.ssh/id_rsa</p>
-
-
                         <p>7.) Copy the SSH key to your clipboard by copying the command below:</p>
                         <p>If your SSH key file has a different name than the example code, modify the filename to
                             match your current setup. When copying your key, don't add any newlines or whitespace.</p>
-                        <p class="cmd-text">sudo apt-get install xclip<br>
+                        <p class="cmd-text">sudo apt-get install git xclip<br>
                             xclip -sel clip < ~/.ssh/id_rsa.pub </p> <p>8.) Now, login in to your Github account, and
                                 go to your account settings</p>
                         <img src="images/githubsettings.png" alt="github image settings" class="img-fluid margin-bot">
@@ -358,7 +356,15 @@
                 <p>git commit -m "", is the command you use when you've told git you have changes made to your project
                     in your staging area but now you need to commit them to the HEAD</p>
                 <p>think of git commits, as a snapshot of your certain project at a given point in time, they arent
-                    pushing your changes up a to a remote server</p>
+                    pushing your changes up a to a remote server.
+                </p>
+                <p class="font-weight-bold">Now important note: if you just type <span class="cmd-font">"git commit"</span>, it will open the VIM, 
+                   if that happens, don't panic all you simply need to do is:<br>
+                    <span class="cmd-font">1.) Press the "esc" key</span><br>
+                    <span class="cmd-font">2.) type ":q!", this will abort the commit due to an empty commit message.</span>
+                </p>
+
+                
             </div>
             <div class="col-md-6 offset-md-3 col-sm-12">
                 <h3 class="cmd-text header-spacing">git push</h3>
