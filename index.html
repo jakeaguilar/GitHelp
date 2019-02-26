@@ -46,46 +46,6 @@
             </div>
         </div>
     </div>
-    <!-- SETTING UP GIT/GITHUB SSH KEY -->
-    <div class="container-fluid text-center git-ssh section-spacing">
-        <h1 class="header-spacing">Setting Up Git/Github SSH Key</h1>
-        <div class="row d-flex flex-column align-items-center align-content-center">
-            <div class="col-8">
-                <p>1.) Open up your terminal, or Git Bash for Windows Users</p>
-                <p>2.) Paste the text below, substituting in your GitHub email address.</p>
-                <p class="cmd-text">ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</p>
-                <p> This creates a new ssh key, using the provided email as a label.</p>
-                <p class="cmd-text"> > Generating public/private rsa key pair</p>
-                <p>3.) When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the
-                    default file location.</p>
-                <p class="cmd-text"> Enter a file in which to save the key (/c/Users/you/.ssh/id_rsa):[Press enter]</p>
-                <p>4.) At the prompt, type a secure passphrase.</p>
-                <p class="cmd-text"> > Enter passphrase (empty for no passphrase): [Type a passphrase]</p>
-                <p class="cmd-text"> > Enter same passphrase again: [Type passphrase again]</p>
-                <p>5.) Start your ssh-agent manually, by copying the command below:</p>
-                <p class="cmd-text">eval $(ssh-agent -s)</p>
-                <p>After, it will spit out an agent pid number, your's will be different than the one below:</p>
-                <p class="cmd-text"> > Agent pid 12345</p>
-                <p> 6.) Add your SSH private key to the ssh-agent, by copying the command below:</p>
-                <p class="cmd-text">ssh-add ~/.ssh/id_rsa</p>
-                <p>7.) Copy the SSH key to your clipboard by copying the command below:</p>
-                <p class="cmd-text">clip < ~/.ssh/id_rsa.pub </p> <p>8.) Now, login in to your Github account, and go
-                        to your account settings</p>
-                <img src="images/githubsettings.png" alt="github image settings" class="img-fluid margin-bot">
-                <p>9.) In the user settings sidebar, click "SSH and GPG keys"</p>
-                <img src="images/settings-sidebar-ssh-keys.png" alt="user settings sidebar ssh" class="img-fluid margin-bot">
-                <p>10.) Click the green button labeled "New SSH Key"</p>
-                <img src="images/new-ssh-key.png" alt="new ssh key" class="img-fluid margin-bot ">
-                <p>11.) In the "Title" field, add a descriptive label for the new key, an example would be if you're
-                    developing on your personal laptop or Mac, you could call this key, "My Acer Laptop" or "My Mac".
-                </p>
-                <p>12.) Paste your clipped key into the "Key" field.</p>
-                <p>13.) Click "Add SSH key"</p>
-                <img src="images/ssh-title-key.PNG" alt="ssh-title-key-add" class="img-fluid margin-bot">
-                <p>14.) If you're prompted, enter your Github password</p>
-            </div>
-        </div>
-    </div>
     <!-- WHAT IS GIT? -->
     <div class="container-fluid text-center what-is-git section-spacing">
         <h1 class="header-spacing">What even is Git?</h1>
@@ -130,6 +90,162 @@
                 </p>
             </div>
         </div>
+    </div>
+     <!-- SETTING UP GIT/GITHUB SSH KEY -->
+    <div id="carouselGitSshKey" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
+            <!-- WINDOWS SSH -->
+            <div class="carousel-item active container-fluid text-center git-ssh section-spacing">
+                <h1 class="header-spacing">Setting Up Git/Github SSH Key (Windows)</h1>
+                <div class="row d-flex flex-column align-items-center align-content-center">
+                    <div class="col-8">
+                        <p>1.) Open up your terminal, or Git Bash for Windows Users</p>
+                        <p>2.) Paste the text below, substituting in your GitHub email address.</p>
+                        <p class="cmd-text">ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</p>
+                        <p> This creates a new ssh key, using the provided email as a label.</p>
+                        <p class="cmd-text"> > Generating public/private rsa key pair</p>
+                        <p>3.) When you're prompted to "Enter a file in which to save the key," press Enter. This
+                            accepts the
+                            default file location.</p>
+                        <p class="cmd-text"> Enter a file in which to save the key (/c/Users/you/.ssh/id_rsa):[Press
+                            enter]</p>
+                        <p>4.) At the prompt, type a secure passphrase.</p>
+                        <p class="cmd-text"> > Enter passphrase (empty for no passphrase): [Type a passphrase]</p>
+                        <p class="cmd-text"> > Enter same passphrase again: [Type passphrase again]</p>
+                        <p>5.) Start your ssh-agent manually, by copying the command below:</p>
+                        <p class="cmd-text">eval $(ssh-agent -s)</p>
+                        <p>After, it will spit out an agent pid number, your's will be different than the one below:</p>
+                        <p class="cmd-text"> > Agent pid 12345</p>
+                        <p> 6.) Add your SSH private key to the ssh-agent, by copying the command below:</p>
+                        <p class="cmd-text">ssh-add ~/.ssh/id_rsa</p>
+                        <p>7.) Copy the SSH key to your clipboard by copying the command below:</p>
+                        <p class="cmd-text">clip < ~/.ssh/id_rsa.pub </p> <p>8.) Now, login in to your Github account,
+                                and go to your account settings</p>
+                        <img src="images/githubsettings.png" alt="github image settings" class="img-fluid margin-bot">
+                        <p>9.) In the user settings sidebar, click "SSH and GPG keys"</p>
+                        <img src="images/settings-sidebar-ssh-keys.png" alt="user settings sidebar ssh" class="img-fluid margin-bot">
+                        <p>10.) Click the green button labeled "New SSH Key"</p>
+                        <img src="images/new-ssh-key.png" alt="new ssh key" class="img-fluid margin-bot ">
+                        <p>11.) In the "Title" field, add a descriptive label for the new key, an example would be if
+                            you're
+                            developing on your personal laptop or Mac, you could call this key, "My Acer Laptop" or "My
+                            Mac".
+                        </p>
+                        <p>12.) Paste your clipped key into the "Key" field.</p>
+                        <p>13.) Click "Add SSH key"</p>
+                        <img src="images/ssh-title-key.PNG" alt="ssh-title-key-add" class="img-fluid margin-bot">
+                        <p>14.) If you're prompted, enter your Github password</p>
+                    </div>
+                </div>
+            </div>
+            <!-- MAC SSH -->
+            <div class="carousel-item container-fluid text-center git-ssh section-spacing">
+                <h1 class="header-spacing">Setting Up Git/Github SSH Key (Mac)</h1>
+                <div class="row d-flex flex-column align-items-center align-content-center">
+                    <div class="col-8">
+                        <p>1.) Open up your terminal, or Git Bash for Windows Users</p>
+                        <p>2.) Paste the text below, substituting in your GitHub email address.</p>
+                        <p class="cmd-text">ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</p>
+                        <p> This creates a new ssh key, using the provided email as a label.</p>
+                        <p class="cmd-text"> > Generating public/private rsa key pair</p>
+                        <p>3.) When you're prompted to "Enter a file in which to save the key," press Enter. This
+                            accepts the
+                            default file location.</p>
+                        <p class="cmd-text"> Enter a file in which to save the key (/c/Users/you/.ssh/id_rsa):[Press
+                            enter]</p>
+                        <p>4.) At the prompt, type a secure passphrase.</p>
+                        <p class="cmd-text"> > Enter passphrase (empty for no passphrase): [Type a passphrase]</p>
+                        <p class="cmd-text"> > Enter same passphrase again: [Type passphrase again]</p>
+                        <p>5.) Start your ssh-agent manually, by copying the command below:</p>
+                        <p class="cmd-text">eval $(ssh-agent -s)</p>
+                        <p>6.) If you're using macOS Sierra 10.12.2 or later, you will need to modify your
+                            ~/.ssh/config file to automatically load keys into the ssh-agent and store passphrases in
+                            your keychain.</p>
+                        <p class="cmd-text">Host *<br>
+                            AddKeysToAgent yes<br>
+                            UseKeychain yes<br>
+                            IdentityFile ~/.ssh/id_rsa
+                        </p>
+                        <p> 7.) Add your SSH private key to the ssh-agent, by copying the command below:</p>
+                        <p class="cmd-text">ssh-add -K ~/.ssh/id_rsa</p>
+                        <p> 8.) Copy the SSH key to your clipboard by copying the command below:</p>
+                        <p class="cmd-text">pbcopy < ~/.ssh/id_rsa.pub </p> <p> 9.) Now, login in to your Github
+                                account, and go to your account settings</p>
+                        <img src="images/githubsettings.png" alt="github image settings" class="img-fluid margin-bot">
+                        <p>10.) In the user settings sidebar, click "SSH and GPG keys"</p>
+                        <img src="images/settings-sidebar-ssh-keys.png" alt="user settings sidebar ssh" class="img-fluid margin-bot">
+                        <p>11.) Click the green button labeled "New SSH Key"</p>
+                        <img src="images/new-ssh-key.png" alt="new ssh key" class="img-fluid margin-bot ">
+                        <p>12.) In the "Title" field, add a descriptive label for the new key, an example would be if
+                            you're
+                            developing on your personal laptop or Mac, you could call this key, "My Acer Laptop" or "My
+                            Mac".
+                        </p>
+                        <p>13.) Paste your clipped key into the "Key" field.</p>
+                        <p>14.) Click "Add SSH key"</p>
+                        <img src="images/ssh-title-key.PNG" alt="ssh-title-key-add" class="img-fluid margin-bot">
+                        <p>15.) If you're prompted, enter your Github password</p>
+                    </div>
+                </div>
+            </div>
+            <!-- LINUX SSH -->
+            <div class="carousel-item container-fluid text-center git-ssh section-spacing">
+                <h1 class="header-spacing">Setting Up Git/Github SSH Key (Linux)</h1>
+                <div class="row d-flex flex-column align-items-center align-content-center">
+                    <div class="col-8">
+                        <p>1.) Open up your terminal, or Git Bash for Windows Users</p>
+                        <p>2.) Paste the text below, substituting in your GitHub email address.</p>
+                        <p class="cmd-text">ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</p>
+                        <p> This creates a new ssh key, using the provided email as a label.</p>
+                        <p class="cmd-text"> > Generating public/private rsa key pair</p>
+                        <p>3.) When you're prompted to "Enter a file in which to save the key," press Enter. This
+                            accepts the
+                            default file location.</p>
+                        <p class="cmd-text"> Enter a file in which to save the key (/home/you/.ssh/id_rsa): [Press
+                            enter]</p>
+                        <p>4.) At the prompt, type a secure passphrase.</p>
+                        <p class="cmd-text"> > Enter passphrase (empty for no passphrase): [Type a passphrase]</p>
+                        <p class="cmd-text"> > Enter same passphrase again: [Type passphrase again]</p>
+                        <p>5.) Start your ssh-agent manually, by copying the command below:</p>
+                        <p class="cmd-text">eval "$(ssh-agent -s)"</p>
+                        <p>After, it will spit out an agent pid number, your's will be different than the one below:</p>
+                        <p class="cmd-text"> > Agent pid 12345</p>
+                        <p> 6.) Add your SSH private key to the ssh-agent, by copying the command below:</p>
+                        <p class="cmd-text">ssh-add ~/.ssh/id_rsa</p>
+
+
+                        <p>7.) Copy the SSH key to your clipboard by copying the command below:</p>
+                        <p>If your SSH key file has a different name than the example code, modify the filename to
+                            match your current setup. When copying your key, don't add any newlines or whitespace.</p>
+                        <p class="cmd-text">sudo apt-get install xclip<br>
+                            xclip -sel clip < ~/.ssh/id_rsa.pub </p> <p>8.) Now, login in to your Github account, and
+                                go to your account settings</p>
+                        <img src="images/githubsettings.png" alt="github image settings" class="img-fluid margin-bot">
+                        <p>9.) In the user settings sidebar, click "SSH and GPG keys"</p>
+                        <img src="images/settings-sidebar-ssh-keys.png" alt="user settings sidebar ssh" class="img-fluid margin-bot">
+                        <p>10.) Click the green button labeled "New SSH Key"</p>
+                        <img src="images/new-ssh-key.png" alt="new ssh key" class="img-fluid margin-bot ">
+                        <p>11.) In the "Title" field, add a descriptive label for the new key, an example would be if
+                            you're
+                            developing on your personal laptop or Mac, you could call this key, "My Acer Laptop" or "My
+                            Mac".
+                        </p>
+                        <p>12.) Paste your clipped key into the "Key" field.</p>
+                        <p>13.) Click "Add SSH key"</p>
+                        <img src="images/ssh-title-key.PNG" alt="ssh-title-key-add" class="img-fluid margin-bot">
+                        <p>14.) If you're prompted, enter your Github password</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselGitSshKey" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon ssh-key-controls" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselGitSshKey" role="button" data-slide="next">
+            <span class="carousel-control-next-icon ssh-key-controls" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
     <!-- CHANGING DIRECTORIES AND LISTING -->
     <div class="container-fluid text-center git-cd-ls section-spacing">
@@ -237,17 +353,23 @@
             </div>
             <div class="col-md-6 offset-md-3 col-sm-12">
                 <h3 class="cmd-text header-spacing">git commit -m "example text"</h3>
-                <p>git commit -m "", is the command you use when you've told git you have changes made to your project in your staging area but now you need to commit them to the HEAD</p>
-                <p>think of git commits, as a snapshot of your certain project at a given point in time, they arent pushing your changes up a to a remote server</p>
+                <p>git commit -m "", is the command you use when you've told git you have changes made to your project
+                    in your staging area but now you need to commit them to the HEAD</p>
+                <p>think of git commits, as a snapshot of your certain project at a given point in time, they arent
+                    pushing your changes up a to a remote server</p>
             </div>
             <div class="col-md-6 offset-md-3 col-sm-12">
                 <h3 class="cmd-text header-spacing">git push</h3>
-                <p>git push, does kind of what the name suggests, it pushes up your the commits you made previously up to your remote repo.</p>
-                <p>Now depending on whether youve pushed up to your branch before will vary how you use the git push command</p>
+                <p>git push, does kind of what the name suggests, it pushes up your commits you made previously up
+                    to your remote repo.</p>
+                <p>Now depending on whether youve pushed up to your branch before will vary how you use the git push
+                    command</p>
                 <p>If you've never pushed to your branch before the command you will use is:</p>
                 <p class="cmd-text">git push -u origin "branch name"</p>
-                <p>This command does a couple things, one it's pushing your commits made up to your remote, and then the "-u" is linking the local branch with the remote version of the branch</p>
-                <p>However, lets say you have already pushed to this branch before and you just need to push new commits made, you can just use:</p>
+                <p>This command does a couple things, one it's pushing your commits made up to your remote, and then
+                    the "-u" is linking the local branch with the remote version of the branch</p>
+                <p>However, lets say you have already pushed to this branch before and you just need to push new
+                    commits made, you can just use:</p>
                 <p class="cmd-text">git push</p>
             </div>
         </div>
