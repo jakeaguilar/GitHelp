@@ -97,23 +97,29 @@ li{
     margin-bottom: 1em;
     
 }
-/* SETTING UP GIT/GITHUB SSH */
-.git-ssh{
-    background-color: #e9ecef;
-}
-
 /* WHAT IS GIT? */
 .what-is-git{
-    background-color: #fff;
+    background-color: #e9ecef;
 }
 /* WHAT IS GITHUB? */
 .what-is-github{
-    background-color: #e9ecef;
+    background-color: #fff;
 }
 /*  GIT WORKFLOW */
 .git-workflow{
+    background-color: #e9ecef;
+}
+
+/* SETTING UP GIT/GITHUB SSH */
+.git-ssh{
     background-color: #fff;
 }
+
+.ssh-key-controls{
+    color: #e9ecef;
+}
+
+
 
 /* LISTING DIRECTORIES AND FILES */
 .git-cd-ls{
