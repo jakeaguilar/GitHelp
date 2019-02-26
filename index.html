@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- NAV -->
     <nav class="col sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
         <a href="#" class="navbar-brand">GitHelp</a>
         <div class="collapse navbar-collapse">
@@ -23,6 +24,7 @@
             </ul>
         </div>
     </nav>
+    <!-- HERO -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container text-center">
             <h1 class="display-3">GitHelp...</h1>
@@ -298,7 +300,7 @@
             </div>
         </div>
     </div>
-    <!--DIFFERENTT WAYS TO GIT INIT -->
+    <!--DIFFERENT WAYS TO GIT INIT -->
     <div class="container-fluid text-center git-init section-spacing">
         <h1 class="header-spacing">Different Ways of Intializing a Git Repo</h1>
         <h4 class="header-spacing">We learned how to change and make directories/files, lets git started!</h4>
@@ -374,8 +376,76 @@
             </div>
         </div>
     </div>
-
-
+    <!-- GIT BRANCHES -->
+    <div class="container-fluid text-center section-spacing">
+        <h1 class="header-spacing">Creating Versions</h1>
+        <h4 class="header-spacing">We've worked on only one version of our code, but how do we make different versions?</h4>
+        <p>However, the whole purpose of git is to allow you to work on multiple different branches(versions) of code, 
+            without conflicting with each other.
+        </p>
+        <p>Git lets developers have as many branches active as they want, and they can all be worked on independently from one another
+            until they want to merge them back together
+        </p>
+        <p>So far we have only worked on one <span class="cmd-font">branch</span> called <span class="cmd-font">master</span>. 
+            This branch is created by default by git.
+        </p>
+        <div class="row d-flex flex-row">
+            <div class="col-md-6 col-sm-12">
+                <h3 class="cmd-text header-spacing">git branch</h3>
+                <p>By using the command: <span class="cmd-font">git branch</span>, it will output a list of branches currently in the repo,
+                    what branch you're on, and asterisk where the HEAD is.
+                </p>
+                <p>To create a new branch using <span class="cmd-font">git branch</span> you can use the command below:</p>
+                <p class="cmd-text"> git branch development</p>
+                <p>Below is an example of using git branch to list branches and creating a new branch:</p>
+                <img src="images/git-branch.png" alt="git-branch" class="img-fluid margin-bot">
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h3 class="cmd-text header-spacing">git checkout</h3>
+                <p>Lets assume you already created a new branch called, <span class="cmd-font">exampleBranch</span>, 
+                    in order to switch to that branch, you'd use the command:
+                </p>
+                <p class="cmd-text">git checkout exampleBranch</p>
+                <p>You're now on the branch called, <span class="cmd-font">exampleBranch</span>, but what if from here you want to go back to another branch? You'd use the same
+                    command except switch out the branch name for the branch you would like to switch to, like below:
+                </p>
+                <img src="images/git-checkout.png" alt="git-checkout" class="img-fluid margin-bot" >
+            </div>
+        </div>
+        <p>Now that we know how to create branches, and switch to branches, there is a shortcut to create a new branch 
+            and immediately switch to it. The command is:
+        </p>
+        <p class="cmd-text">git checkout -b "branchName"</p>
+        <p>Here's an example of the command in use, and switching back to the original branch i was working on:</p> 
+        <img src="images/git-checkout-b.png" alt="" class="img-fluid margin-bot">
+    </div>
+    <!-- GIT STATUS -->
+    <div class="container-fluid text-center section-spacing">
+        <h1 class="header-spacing">Inspecting a Repository</h1>
+        <h4 class="header-spacing">How can we check if files are untracked, committed, pushed?</h4>
+        <div class="row d-flex flex-row">
+            <div class="col-md-6 col-sm-12">
+                <h3 class="cmd-text header-spacing">git status</h3>
+                <p>The <span class="cmd-font">git status</span> command is a relatively simple command. It just shows you what's been happening with <span class="cmd-font">git add</span> and <span class="cmd-font">git commit</span>.</p>
+                <p>It lists which changes have been tracked,staged/not staged by git, what branch you're on, and if your remote has updates you need to pull down.</p>
+                <p>Below is an exmaple, and shows that my current changes are not staged:</p>
+                <img src="images/git-status.png" alt="git-status" class="img-fluid margin-bot">
+                <p>It is best practice to check that state of your repo before you begin working on your projects, this will prevent you working on outdated code, or accidentally committing a portion of code you didn't mean to.</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h3 class="cmd-text header-spacing">git log</h3>
+                <p>The <span class="cmd-font">git log</span> command displays your commit snapshots.</p>
+                <p>It will let you see your project history, filter through it, and even search for specifc changes.</p>
+                <p>The main difference between <span class="cmd-font">git status</span> and <span class="cmd-font">git log</span> is <span class="cmd-font">git status</span> 
+                    lets you inspect your working directory and staging area, while <span class="cmd-font">git log</span> only works for committed history.
+                </p>
+                <p>If your <span class="cmd-font">git log</span> takes up more than terminal screen, you can scroll down with your space, arrow keys, or mouse scroll. To exit your 
+                    <span class="cmd-font">git log</span> simply just press "q".
+                </p>
+                <img src="images/git-log.png" alt="" class="img-fluid margin-bot">
+            </div>
+        </div>
+    </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
