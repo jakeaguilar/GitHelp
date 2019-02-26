@@ -33,7 +33,7 @@
         </div>
     </div>
     <!-- DOWNLOADING GIT -->
-    <div class="container text-center download-git">
+    <div class="container text-center download-git section-spacing">
         <h1 class="header-spacing">Git-ting well... Git</h1>
         <div class="row d-flex flex-column">
             <h3 class="header-spacing">Downloading Git</h3>
@@ -46,56 +46,154 @@
             </div>
         </div>
     </div>
+    <!-- SETTING UP GIT/GITHUB SSH KEY -->
+    <div class="container-fluid text-center git-ssh section-spacing">
+        <h1 class="header-spacing">Setting Up Git/Github SSH Key</h1>
+        <div class="row d-flex flex-column align-items-center align-content-center">
+            <div class="col-8">
+                <p>1.) Open up your terminal, or Git Bash for Windows Users</p>
+                <p>2.) Paste the text below, substituting in your GitHub email address.</p>
+                <p class="cmd-text">ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</p>
+                <p> This creates a new ssh key, using the provided email as a label.</p>
+                <p class="cmd-text"> > Generating public/private rsa key pair</p>
+                <p>3.) When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the
+                    default file location.</p>
+                <p class="cmd-text"> Enter a file in which to save the key (/c/Users/you/.ssh/id_rsa):[Press enter]</p>
+                <p>4.) At the prompt, type a secure passphrase.</p>
+                <p class="cmd-text"> > Enter passphrase (empty for no passphrase): [Type a passphrase]</p>
+                <p class="cmd-text"> > Enter same passphrase again: [Type passphrase again]</p>
+                <p>5.) Start your ssh-agent manually, by copying the command below:</p>
+                <p class="cmd-text">eval $(ssh-agent -s)</p>
+                <p>After, it will spit out an agent pid number, your's will be different than the one below:</p>
+                <p class="cmd-text"> > Agent pid 12345</p>
+                <p> 6.) Add your SSH private key to the ssh-agent, by copying the command below:</p>
+                <p class="cmd-text">ssh-add ~/.ssh/id_rsa</p>
+                <p>7.) Copy the SSH key to your clipboard by copying the command below:</p>
+                <p class="cmd-text">clip < ~/.ssh/id_rsa.pub </p> <p>8.) Now, login in to your Github account, and go
+                        to your account settings</p>
+                <img src="images/githubsettings.png" alt="github image settings" class="img-fluid margin-bot">
+                <p>9.) In the user settings sidebar, click "SSH and GPG keys"</p>
+                <img src="images/settings-sidebar-ssh-keys.png" alt="user settings sidebar ssh" class="img-fluid margin-bot">
+                <p>10.) Click the green button labeled "New SSH Key"</p>
+                <img src="images/new-ssh-key.png" alt="new ssh key" class="img-fluid margin-bot ">
+                <p>11.) In the "Title" field, add a descriptive label for the new key, an example would be if you're
+                    developing on your personal laptop or Mac, you could call this key, "My Acer Laptop" or "My Mac".
+                </p>
+                <p>12.) Paste your clipped key into the "Key" field.</p>
+                <p>13.) Click "Add SSH key"</p>
+                <img src="images/ssh-title-key.PNG" alt="ssh-title-key-add" class="img-fluid margin-bot">
+                <p>14.) If you're prompted, enter your Github password</p>
+            </div>
+        </div>
+    </div>
     <!-- WHAT IS GIT? -->
-    <div class="container-fluid text-center what-is-git">
+    <div class="container-fluid text-center what-is-git section-spacing">
         <h1 class="header-spacing">What even is Git?</h1>
-        <div class="row d-flex flex-column align-items-center">
+        <div class="row d-flex flex-column align-items-center align-content-center">
             <div class="col-8">
                 <p>Git is a Version Control System (VCS) that keeps track of older versions of files,
                     and gives us the ability to roll back and maintain different versions of the same files at the same
                     time.
                 </p>
-                <p>Git is vital for developers today, because of one simple word, collaboration! Git allows many developers to clone a 
-                    repository or "repo" (collection of files) from a main codebase down to their machines, work separately on portions of code, 
-                    and then commit their changes back to the main codebase where everybody can update the new changes.  
+                <p>Git is vital for developers today, because of one simple word, collaboration! Git allows many
+                    developers to clone a
+                    repository or "repo" (collection of files) from a main codebase down to their machines, work
+                    separately on portions of code,
+                    and then commit their changes back to the main codebase where everybody can update the new changes.
                 </p>
             </div>
         </div>
     </div>
     <!-- WHAT IS GITHUB? -->
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center what-is-github section-spacing">
         <h1 class="header-spacing">Then What is Github?</h1>
-        <div class="row d-flex flex-column align-items-center">
+        <div class="row d-flex flex-column align-items-center align-content-center">
             <div class="col-8">
-                <p>Github is a platform/cloud-based service that allows developers to store and manage their project's code, in addition to keeping track to changes
+                <p>Github is a platform/cloud-based service that allows developers to store and manage their project's
+                    code, in addition to keeping track to changes
                     in the codebase, merging together different versions/branches of code and much more!
                 </p>
-                <p>Also worth noting that are other service out there like Github, such as BitBucket or GitLab, but they essentially work like Github</p>
+                <p>Also worth noting that are other service out there like Github, such as BitBucket or GitLab, but
+                    they essentially work like Github</p>
             </div>
         </div>
     </div>
     <!-- GIT WORKFLOW -->
-    <div class="container-fluid text-center git-workflow">
+    <div class="container-fluid text-center git-workflow section-spacing">
         <h1 class="header-spacing">Git Workflow</h1>
-        <div class="row d-flex flex-column align-items-center">
+        <div class="row d-flex flex-column align-items-center align-content-center">
             <div class="col-8">
                 <p>Essentially there are three "trees" maintained by git. The first tree is called the <span class="cmd-font">"Working
-                    Directory"</span>. This tree contains the acutal files. Next, is the <span class="cmd-font">"Index"</span>
+                        Directory"</span>. This tree contains the acutal files. Next, is the <span class="cmd-font">"Index"</span>
                     tree, which acts as a staging area before pushing files up. The last tree is the <span class="cmd-font">"HEAD"</span>
                     which simply a reference to the most recent commit made in your current branch, most of the time...
                 </p>
             </div>
         </div>
     </div>
+    <!-- CHANGING DIRECTORIES AND LISTING -->
+    <div class="container-fluid text-center git-cd-ls section-spacing">
+        <h1 class="header-spacing">Changing Directories</h1>
+        <h4 class="header-spacing">We've learned a bit about Git, but lets get started.</h4>
+        <div class="row d-flex flex-row">
+            <div class="col-6">
+                <h3 class="header-spacing"> Changing Directories</h3>
+                <p>In order to change to different directories in our machine, the command we use is: </p>
+                <p class="cmd-text margin-bot">cd "directory name"</p>
+                <p>or</p>
+                <p class="cmd-text margin-bot">cd desktop/projects/GitHelp</p>
+                <p>Now what if we need to go up only one directory in our folder structure? We will use: </p>
+                <span class="cmd-text margin-bot">cd ..</span>
+            </div>
+            <div class="col-6">
+                <h3 class="header-spacing">Listing</h3>
+                <p>Sometimes when in a directory, you may want to see what files live within that directory. The
+                    command we use is:</p>
+                <span class="cmd-text margin-bot">ls</span>
+                <p>In turn this will put out a response similar to this: </p>
+                <p class="cmd-text margin-bot"> > css images index.html js</p>
+            </div>
+        </div>
+    </div>
+    <!-- MAKING DIRECTORIES AND FILES -->
+    <div class="container-fluid text-center git-dir-files section-spacing">
+        <h1 class="header-spacing">Making Directories and Files</h1>
+        <h4 class="header-spacing">Now that we can change directories, we can learn how to make them!</h4>
+        <div class="row d-flex flex-row">
+            <div class="col-md-6 col-sm-12">
+                <h3 class="header-spacing">Directories</h3>
+                <p>"Directory" is just a fancy word for a folder</p>
+                <p>The command we use to create a directory/folder in our system is: </p>
+                <span class="cmd-text margin-bot">mkdir "directory/folder name"</span>
+                <p>We can also create multiple directories at once by: </p>
+                <span class="cmd-text margin-bot">mkdir css js images</span>
+                <p>Making directories is only a small part of the battle, later we will learn how to:</p>
+                <p>Change between directories and list everything in a given directory</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h3 class="header-spacing">Files</h3>
+                <p>We use Files everyday whether it be a docx, pptx, or even text files.</p>
+                <p>However, with Git we can make every file we need all from the command line using the command: </p>
+                <span class="cmd-text margin-bot">touch "file name"</span>
+                <p>You can also create multiple files at once by: </p>
+                <span class="cmd-text margin-bot"> touch index.html css/styles.css js/scripts.js</span>
+                <p>One thing to keep in mind when creating files is to make sure you are in the right directory before
+                    creating it.</p>
+            </div>
+        </div>
+    </div>
     <!--DIFFERENTT WAYS TO GIT INIT -->
-    <div class="container-fluid text-center git-init">
+    <div class="container-fluid text-center git-init section-spacing">
         <h1 class="header-spacing">Different Ways of Intializing a Git Repo</h1>
-        <div class="row d-flex flex-column align-items-center">
+        <h4 class="header-spacing">We learned how to change and make directories/files, lets git started!</h4>
+        <div class="row d-flex flex-column align-items-center align-content-center">
             <div class="col-8">
                 <h3 class="header-spacing">Command Line/Terminal</h3>
+                <p>Lets say you already began working on a project, but didnt set up git yet, you can do it all from
+                    your terminal.</p>
                 <p>Once you create a repo on GitHub, you can run the following commands but you need insert your own
                     repo name</p>
-                <p class="cmd-font margin-bot">
+                <p class="cmd-text margin-bot">
                     git init<br>
                     git add .<br>
                     git commit -m "first commit"<br>
@@ -113,98 +211,48 @@
                 <img src="images/gitclonerepo.png" alt="gitclonerepo" class="img-fluid margin-bot">
                 <p>From here, click on the green button saying, "Clone or download"</p>
                 <p>A dropdown will appear, saying Clone with SSH/or HTTPS, then click on the clipboard to the right of
-                    the link</p>
-                <p>After copying the link, open your terminal/git bash and change directories into whereever you keep
-                    your projects, for me it's my projects folder</p>
-                <p>then the git command you will use to clone your Github repo down to your machine is: </p>
-                <span class="cmd-font margin-bot">git clone git@github.com:jakeaguilar/git-example.git</span>
+                    the link.
+                </p>
+                <p>After copying the link, open your terminal/git bash and change directories into whereever you want
+                    to save your repo/projects, for me I keep all my work in a "projects" folder.
+                </p>
+                <p>From here, the git command you will use to clone your Github repo down to your machine is: </p>
+                <span class="cmd-text margin-bot">git clone git@github.com:jakeaguilar/git-example.git</span>
                 <img src="images/gitclonebash.png" alt="gitbashclone" class="img-fluid margin-bot">
             </div>
         </div>
     </div>
-    <!-- MAKING DIRECTORIES AND FILES -->
-    <div class="container-fluid text-center git-dir-files">
-        <h1 class="header-spacing">Making Directories and Files</h1>
-        <h4 class="header-spacing">Now that we have our repos on our machine, we can begin creating our folder
-            structure and files.</h4>
-        <div class="row d-flex flex-row">
-            <div class="col-6">
-                <h3 class="header-spacing">Directories</h3>
-                <p>"Directory" is just a fancy word for a folder</p>
-                <p>The command we use to create a directory/folder in our system is: </p>
-                <span class="cmd-font margin-bot">mkdir "directory/folder name"</span>
-                <p>We can also create multiple directories at once by: </p>
-                <span class="cmd-font margin-bot">mkdir css js images</span>
-                <p>Making directories is only a small part of the battle, later we will learn how to:</p>
-                <p>Change between directories and list everything in a given directory</p>
-            </div>
-            <div class="col-6">
-                <h3 class="header-spacing">Files</h3>
-                <p>We use Files everyday whether it be a docx, pptx, or even text files.</p>
-                <p>However, with Git we can make every file we need all from the command line using the command: </p>
-                <span class="cmd-font margin-bot">touch "file name"</span>
-                <p>You can also create multiple files at once by: </p>
-                <span class="cmd-font margin-bot"> touch index.html css/styles.css js/scripts.js</span>
-                <p>One thing to keep in mind when creating files is to make sure you are in the right directory before
-                    creating it.</p>
-            </div>
-        </div>
-    </div>
-    <!-- CHANGING DIRECTORIES AND LISTING -->
-    <div class="container-fluid text-center git-cd-ls">
-        <h1 class="header-spacing">Changing Directories</h1>
-        <h4 class="header-spacing">We've learned how to make our folder structure but how do we change between
-            directories?</h4>
-        <div class="row d-flex flex-row">
-            <div class="col-6">
-                <h3 class="header-spacing"> Changing Directories</h3>
-                <p>In order to change to different directories in our machine, the command we use is: </p>
-                <span class="cmd-font margin-bot">cd "directory name"</span>
-                <p>Now what if we need to go up only one directory in our folder structure? We will use: </p>
-                <span class="cmd-font margin-bot">cd ..</span>
-            </div>
-            <div class="col-6">
-                <h3 class="header-spacing">Listing</h3>
-                <p>Sometimes when in a directory, you may want to see what files live within that directory. The
-                    command we use is:</p>
-                <span class="cmd-font margin-bot">ls</span>
-                <p>In turn this will put out a response similar to this: </p>
-                <span class="cmd-font margin-bot">css images index.html js</span>
-            </div>
-        </div>
-    </div>
     <!-- PUSHING UP TO GITHUB -->
-    <div class="container-fluid text-center git-add">
+    <div class="container-fluid text-center git-add section-spacing">
         <h1 class="header-spacing">Pushing to Github</h1>
         <h4 class="header-spacing">We have directories and files to push to Github, but how?</h4>
         <div class="row d-flex flex-row">
-            <div class="col-6">
-                <h3 class="header-spacing">git add .</h3>
-                <p>git add, simply put is a command that tells git to track ANY chnages made to the project</p>
+            <div class="col-md-6 offset-md-3 col-sm-12">
+                <h3 class="cmd-text header-spacing">git add .</h3>
+                <p>git add . ,simply put is a command that tells git to track ANY chnages made to the project, and then
+                    ADD them to the staging area.</p>
                 <p>This could include:</p>
                 <p>Project Files, such as, html pages, stylesheets, script files, images, and more...</p>
                 <p>File/Directory changes,: any code edits, directory path changes</p>
-                <p></p>
-
-                <p>The command we use to create a directory/folder in our system is: </p>
-                <span class="cmd-font margin-bot">mkdir "directory/folder name"</span>
-                <p>We can also create multiple directories at once by: </p>
-                <span class="cmd-font margin-bot">mkdir css js images</span>
-                <p>Making directories is only a small part of the battle, later we will learn how to:</p>
-                <p>Change between directories and list everything in a given directory</p>
             </div>
-            <div class="col-6">
-                <h3 class="header-spacing">Files</h3>
-                <p>We use Files everyday whether it be a docx, pptx, or even text files.</p>
-                <p>However, with Git we can make every file we need all from the command line using the command: </p>
-                <span class="cmd-font margin-bot">touch "file name"</span>
-                <p>You can also create multiple files at once by: </p>
-                <span class="cmd-font margin-bot"> touch index.html css/styles.css js/scripts.js</span>
-                <p>One thing to keep in mind when creating files is to make sure you are in the right directory before
-                    creating it.</p>
+            <div class="col-md-6 offset-md-3 col-sm-12">
+                <h3 class="cmd-text header-spacing">git commit -m "example text"</h3>
+                <p>git commit -m "", is the command you use when you've told git you have changes made to your project in your staging area but now you need to commit them to the HEAD</p>
+                <p>think of git commits, as a snapshot of your certain project at a given point in time, they arent pushing your changes up a to a remote server</p>
+            </div>
+            <div class="col-md-6 offset-md-3 col-sm-12">
+                <h3 class="cmd-text header-spacing">git push</h3>
+                <p>git push, does kind of what the name suggests, it pushes up your the commits you made previously up to your remote repo.</p>
+                <p>Now depending on whether youve pushed up to your branch before will vary how you use the git push command</p>
+                <p>If you've never pushed to your branch before the command you will use is:</p>
+                <p class="cmd-text">git push -u origin "branch name"</p>
+                <p>This command does a couple things, one it's pushing your commits made up to your remote, and then the "-u" is linking the local branch with the remote version of the branch</p>
+                <p>However, lets say you have already pushed to this branch before and you just need to push new commits made, you can just use:</p>
+                <p class="cmd-text">git push</p>
             </div>
         </div>
     </div>
+
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
