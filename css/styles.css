@@ -14,6 +14,7 @@ font-family: 'Ubuntu', sans-serif;
 /* #e9ecef */
 body{
     font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25em;
 }
 
 .container{
@@ -24,9 +25,26 @@ body{
     font-family: 'Source Code Pro', monospace;
 }
 
+.cmd-text{
+    display: inline-block;
+    padding: .5em;
+    width: 90%;
+    font-family: 'Source Code Pro', monospace;
+    background-color:#141414;
+    color: white;
+    border-radius: .5em;
+    /* overflow-x: auto; */
+    overflow: auto;
+}
+
 .margin-bot{
-    display: block;
+    /* display: block; */
     margin-bottom: 1rem;
+}
+
+.section-spacing{
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .header-spacing{
@@ -79,9 +97,26 @@ li{
     margin-bottom: 1em;
     
 }
+/* SETTING UP GIT/GITHUB SSH */
+.git-ssh{
+    background-color: #e9ecef;
+}
 
-/* DIFFERENT WAYS TO GIT INIT */
-.git-init{
+/* WHAT IS GIT? */
+.what-is-git{
+    background-color: #fff;
+}
+/* WHAT IS GITHUB? */
+.what-is-github{
+    background-color: #e9ecef;
+}
+/*  GIT WORKFLOW */
+.git-workflow{
+    background-color: #fff;
+}
+
+/* LISTING DIRECTORIES AND FILES */
+.git-cd-ls{
     background-color: #e9ecef;
 }
 
@@ -90,8 +125,9 @@ li{
     background-color: #fff;
 }
 
-/* LISTING DIRECTORIES AND FILES */
-.git-cd-ls{
+
+/* DIFFERENT WAYS TO GIT INIT */
+.git-init{
     background-color: #e9ecef;
 }
 
