@@ -251,6 +251,9 @@
     <div class="container-fluid text-center git-cd-ls section-spacing">
         <h1 class="header-spacing">Changing Directories</h1>
         <h4 class="header-spacing">We've learned a bit about Git, but lets get started.</h4>
+        <h6 class="header-spacing font-weight-bold">Note: the commands below, "cd, mkdir, and ls" are native commands of the terminal in general. Due to the 
+            way Git integrates with the terminal, it inheirits these commands to make use of them for Git and more.
+        </h6>
         <div class="row d-flex flex-row">
             <div class="col-md-6 col-sm-12">
                 <h3 class="header-spacing"> Changing Directories</h3>
@@ -338,6 +341,35 @@
             </div>
         </div>
     </div>
+    <!-- REMOTES -->
+    <div class="container-fluid text-center section-spacing">
+        <h1 class="header-spacing">Remotes</h1>
+        <h4 class="header-spacing">Linking our local code, to a "remote" version</h4>
+        <p>Think of <span class="cmd-font">remotes</span> as clone of your local repository on your machine, however it is just on another machine or server</p>
+        <p>You may have noticed in the section above explaining how to intialize git, some commands containing <span class="cmd-font">remote</span> in them.
+            Those commands were linking our local repos to our<span class="cmd-font">remote</span> versions on Github.
+        </p>
+        <div class="row d-flex flex-row">
+            <div class="col-md-6 col-sm-12">
+                <p class="cmd-text">git remote</p>
+                <p>If you were just to type this in your terminal, it would show you a list your remotes that your local repo is connected to, 
+                    most of the time it is just your remote version you have on your own github account.
+                </p>
+                <p class="cmd-text header-spacing">git remote -v</p>
+                <p><span class="cmd-font">git remote -v</span> simply tells you the name of your remote versions, as well as the url for the remote version.</p>
+                <img src="images/git-remote-v.png" alt="git-remote-v" class="img-fluid margin-bot">
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h5 class="cmd-text header-spacing">git remote add origin git@github.com:<span class="git-example">jakeaguilar/git-example</span>.git</h5>
+                <p>The example command above, is the same line from the above section showing us different ways to intialize git. Let's break it down:</p>
+                <p class="cmd-text">git remote add origin "url"</p>
+                <p>This command tells git to add a remote version named <span class="cmd-font">"origin"</span>, (this can be named anything, but convention to use origin)
+                at a given url, which is your github repo url made, when you create the repo on gituhb. Below is where you can find the url for your repo on Github:
+                </p>
+                <img src="images/git-remote-url.png" alt="git-remote-url" class="img-fluid margin-bot">
+            </div>
+        </div>
+    </div>
     <!-- PUSHING UP TO GITHUB -->
     <div class="container-fluid text-center git-add section-spacing">
         <h1 class="header-spacing">Pushing to Github</h1>
@@ -363,8 +395,8 @@
                     <span class="cmd-font">1.) Press the "esc" key</span><br>
                     <span class="cmd-font">2.) type ":q!", this will abort the commit due to an empty commit message.</span>
                 </p>
-
-                
+                <img src="images/git-commit.png" alt="git-commit" class="img-fluid margin-bot">
+                <img src="images/git-commit-q!.png" alt="git-commit-q!" class="img-fluid margin-bot"> 
             </div>
             <div class="col-md-6 offset-md-3 col-sm-12">
                 <h3 class="cmd-text header-spacing">git push</h3>
