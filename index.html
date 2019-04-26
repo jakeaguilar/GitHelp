@@ -48,20 +48,45 @@
             </div>
         </div>
     </div>
+    <!-- WHAT IS A VCS -->
+    <div class="container-fluid text-center what-is-vcs section-spacing">
+        <h1 class="header-spacing">Version Control Wha??</h1>
+        <div class="row d-flex flex-column align-items-center align-content-center">
+            <div class="col-10">
+                <h3 class="header-spacing">What are Version Control Systems(VCS)? </h3>
+                <p>Version Control Systems, also can be known Revision Control Systems or Source Control Systems, are software tools that tracks and manages changes to repositories(fancy name for a collection of files). A VCS also gives teams collaborative tools to share and integrate any changes made to every member of that team. When a VCS is being used, it will track additions, deletions, and modifications applied to any files and directories(fancy name for folders).</p>
+                <h3 class="header-spacing">Why use a VCS?</h3>
+                <p>VCS is an essential tool that helps software development teams collaborate, because in most cases, a software project will include more than one developer working it. However, even if a developer was working on a projects alone, there are still many benefits from using a VCS, so in short there really is no reason not to use a VCS.</p>
+                <hr>
+                <div class="row d-flex flex-row">
+                    <div class="col-md-4 col-xs-12">
+                        <h4>Conflict resolution</h4>
+                        <p>No, not that type of conflict resolution but, merge conflict resolution. While a team is developing a project, there may be times where more than one person will need to make changes to the same file at the same time. This can potentially create conflicts if the developers write different lines of code on the same lines. A VCS will track the changes each developer made and help resolve these conflicts between the developers files to synchronize them.</p>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <h4>Versions</h4>
+                        <p>As you might have guessed, a VCS gives teams the ability to create versions of their projects. There are a couple benefits to this. It provides development teams the ability to "undo" per say by rolling back to previous working versions of the project just in case the current version does break the code. It also gives teams a system to track the history of changes made to the source code throughout the project timeline.</p>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <h4>Backup</h4>
+                        <p>When a development team decides to use a VCS, they also able to host a remote version of their project online, with a service such as Github. In doing this, if something were to happen a a developer's computer, they still would have a backup of their code online, ready to pull down onto a new computer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- WHAT IS GIT? -->
     <div class="container-fluid text-center what-is-git section-spacing">
         <h1 class="header-spacing">What even is Git?</h1>
         <div class="row d-flex flex-column align-items-center align-content-center">
-            <div class="col-8">
-                <p>Git is a Version Control System (VCS) that keeps track of older versions of files,
-                    and gives us the ability to roll back and maintain different versions of the same files at the same
-                    time.
+            <div class="col-10">
+                <p>Git is a Distributed Version Control System (DVCS) used around world the making it one of the most popular version control systems.
                 </p>
                 <p>Git is vital for developers today, because of one simple word, collaboration! Git allows many
-                    developers to clone a
-                    repository or "repo" (collection of files) from a main codebase down to their machines, work
-                    separately on portions of code,
-                    and then commit their changes back to the main codebase where everybody can update the new changes.
+                    developers to clone a repository or "repo" from a main codebase down to 
+                    their machines, work separately on portions of code, and then commit their changes back to the 
+                    main codebase where everybody can update the new changes.
+
                 </p>
             </div>
         </div>
@@ -70,13 +95,13 @@
     <div class="container-fluid text-center what-is-github section-spacing">
         <h1 class="header-spacing">Then What is Github?</h1>
         <div class="row d-flex flex-column align-items-center align-content-center">
-            <div class="col-8">
+            <div class="col-10">
                 <p>Github is a platform/cloud-based service that allows developers to store and manage their project's
                     code, in addition to keeping track to changes
                     in the codebase, merging together different versions/branches of code and much more!
                 </p>
                 <p>Also worth noting that are other service out there like Github, such as BitBucket or GitLab, but
-                    they essentially work like Github</p>
+                    they essentially work like Github.</p>
             </div>
         </div>
     </div>
@@ -84,7 +109,7 @@
     <div class="container-fluid text-center git-workflow section-spacing">
         <h1 class="header-spacing">Git Workflow</h1>
         <div class="row d-flex flex-column align-items-center align-content-center">
-            <div class="col-8">
+            <div class="col-10">
                 <p>Essentially there are three "trees" maintained by git. The first tree is called the <span class="cmd-font">"Working
                         Directory"</span>. This tree contains the acutal files. Next, is the <span class="cmd-font">"Index"</span>
                     tree, which acts as a staging area before pushing files up. The last tree is the <span class="cmd-font">"HEAD"</span>
@@ -100,7 +125,7 @@
             <div class="carousel-item active container-fluid text-center git-ssh section-spacing">
                 <h1 class="header-spacing">Setting Up Git/Github SSH Key (Windows)</h1>
                 <div class="row d-flex flex-column align-items-center align-content-center">
-                    <div class="col-8">
+                    <div class="col-10">
                         <p>1.) Open up your terminal, or Git Bash for Windows Users</p>
                         <p>2.) Paste the text below, substituting in your GitHub email address.</p>
                         <p class="cmd-text">ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</p>
@@ -144,7 +169,7 @@
             <div class="carousel-item container-fluid text-center git-ssh section-spacing">
                 <h1 class="header-spacing">Setting Up Git/Github SSH Key (Mac)</h1>
                 <div class="row d-flex flex-column align-items-center align-content-center">
-                    <div class="col-8">
+                    <div class="col-10">
                         <p>1.) Open up your terminal, or Git Bash for Windows Users</p>
                         <p>2.) Paste the text below, substituting in your GitHub email address.</p>
                         <p class="cmd-text">ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</p>
@@ -194,7 +219,7 @@
             <div class="carousel-item container-fluid text-center git-ssh section-spacing">
                 <h1 class="header-spacing">Setting Up Git/Github SSH Key (Linux)</h1>
                 <div class="row d-flex flex-column align-items-center align-content-center">
-                    <div class="col-8">
+                    <div class="col-10">
                         <p>1.) Open up your terminal, or Git Bash for Windows Users</p>
                         <p>2.) Paste the text below, substituting in your GitHub email address.</p>
                         <p class="cmd-text">ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</p>
@@ -306,7 +331,7 @@
         <h1 class="header-spacing">Different Ways of Intializing a Git Repo</h1>
         <h4 class="header-spacing">We learned how to change and make directories/files, lets git started!</h4>
         <div class="row d-flex flex-column align-items-center align-content-center">
-            <div class="col-8">
+            <div class="col-10">
                 <h3 class="header-spacing">Command Line/Terminal</h3>
                 <p>Lets say you already began working on a project, but didnt set up git yet, you can do it all from
                     your terminal.</p>
@@ -321,7 +346,7 @@
                     git push -u origin master<br>
                 </p>
             </div>
-            <div class="col-8 align-items-center">
+            <div class="col-10 align-items-center">
                 <h3 class="header-spacing">Github</h3>
                 <p>You can also create and intialize a repo from Github as well</p>
                 <p>Below, once creating repo on Github, click the "Intialize this repository with a README"</p>
